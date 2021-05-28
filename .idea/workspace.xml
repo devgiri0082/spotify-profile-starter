@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ebedf5f2-df75-43b9-96f7-f01ad789f35c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/appReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Callback.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Callback.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/action_types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/action_types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
@@ -27,6 +42,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="aeca9c82-11d6-4dcc-ac00-a7268045d1fa" />
@@ -78,6 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1622182619988</updated>
       <workItem from="1622182621075" duration="12156000" />
+      <workItem from="1622203098207" duration="937000" />
+      <workItem from="1622206219233" duration="1892000" />
     </task>
     <task id="LOCAL-00001" summary="initial Setup">
       <created>1622183700923</created>
@@ -98,6 +116,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial Setup" />
@@ -121,29 +151,29 @@
       <screen x="0" y="96" width="1600" height="804" />
     </state>
     <state x="631" y="363" width="327" height="170" key="Github.Dialog.Accounts.Choose/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622183707892" />
-    <state width="1550" height="227" key="GridCell.Tab.0.bottom" timestamp="1622185464033">
+    <state width="1550" height="149" key="GridCell.Tab.0.bottom" timestamp="1622208116944">
       <screen x="0" y="96" width="1600" height="804" />
     </state>
-    <state width="1550" height="227" key="GridCell.Tab.0.bottom/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622185464033" />
-    <state width="1550" height="227" key="GridCell.Tab.0.center" timestamp="1622185464033">
+    <state width="1550" height="149" key="GridCell.Tab.0.bottom/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622208116944" />
+    <state width="1550" height="149" key="GridCell.Tab.0.center" timestamp="1622208116944">
       <screen x="0" y="96" width="1600" height="804" />
     </state>
-    <state width="1550" height="227" key="GridCell.Tab.0.center/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622185464033" />
-    <state width="1550" height="227" key="GridCell.Tab.0.left" timestamp="1622185464033">
+    <state width="1550" height="149" key="GridCell.Tab.0.center/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622208116944" />
+    <state width="1550" height="149" key="GridCell.Tab.0.left" timestamp="1622208116944">
       <screen x="0" y="96" width="1600" height="804" />
     </state>
-    <state width="1550" height="227" key="GridCell.Tab.0.left/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622185464033" />
-    <state width="1550" height="227" key="GridCell.Tab.0.right" timestamp="1622185464033">
+    <state width="1550" height="149" key="GridCell.Tab.0.left/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622208116944" />
+    <state width="1550" height="149" key="GridCell.Tab.0.right" timestamp="1622208116944">
       <screen x="0" y="96" width="1600" height="804" />
     </state>
-    <state width="1550" height="227" key="GridCell.Tab.0.right/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622185464033" />
+    <state width="1550" height="149" key="GridCell.Tab.0.right/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622208116944" />
     <state x="395" y="185" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1622190791188">
       <screen x="0" y="96" width="1600" height="804" />
     </state>
     <state x="395" y="185" width="800" height="525" key="Vcs.Push.Dialog.v2/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622190791188" />
-    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1622193445848">
+    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1622203466216">
       <screen x="0" y="96" width="1600" height="804" />
     </state>
-    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622193445848" />
+    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup/1600.66.1366.768/0.96.1600.804@0.96.1600.804" timestamp="1622203466216" />
   </component>
 </project>

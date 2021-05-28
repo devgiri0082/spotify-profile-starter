@@ -1,4 +1,4 @@
-import {GENERATE_TOKEN, SET_CODE, SET_ERROR, SET_LOADING_STATUS, SET_TOKEN} from "./action_types";
+import {GENERATE_TOKEN, SET_CODE, SET_ERROR, SET_LOADING_STATUS, SET_TOKEN, SET_USER_DATA} from "./action_types";
 
 const axios = require('axios')
 const qs = require('querystring')
@@ -33,7 +33,7 @@ async function getToken(code) {
 const getUserData = async (acceess_token) => {
     let response = await axios({
         url: 'https://api.spotify.com/v1/me',
-        method: 'post',
+        method: 'get',
         headers: {'Authorization': `Bearer ${acceess_token}`},
     })
     console.log('response of user data request', response.data)
@@ -59,24 +59,35 @@ export const setLoadingState = (status) => ({
     data: status
 })
 
+export const setUserData = (userObj) => ({
+    type: SET_USER_DATA,
+    data: userObj
+})
+
 export function refreshToken() {
     return async function (dispatch, getState) {
         let state = getState().auth
-        if (!state.access_token || state.ends_at < new Date().getTime()) {
-            try {
-                const tokenObj = await getToken(state.code)
-                dispatch(setToken(tokenObj, new Date().getTime() + parseInt(tokenObj.expires_in)))
-            } catch (e) {
-                dispatch(setError(e))
-            }
-
+        try {
+            const tokenObj = await getToken(state.code)
+            dispatch(setToken(tokenObj, new Date().getTime() + parseInt(tokenObj.expires_in)))
+        } catch (e) {
+            console.log('Error Set')
+            dispatch(setError(e))
         }
+
     }
 }
 
 
-// export function getUserData(){
-//     return async function (dispatch, getState){
-//         let state = getState()
-//     }
-// }
+export function checkUserData() {
+    return async function (dispatch, getState) {
+        let authState = getState().auth
+        // let appState = getState().app
+        try {
+            let userObj = await getUserData(authState.tokenObj.access_token)
+            dispatch(setUserData(userObj))
+        } catch (e) {
+            dispatch(setError(e))
+        }
+    }
+}
