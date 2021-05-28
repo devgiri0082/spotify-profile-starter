@@ -4,6 +4,7 @@ import Login from "./Login";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Callback from "./Callback";
 import React from "react";
+import Profile from "./Profile";
 
 export default function Main() {
     return (
@@ -14,6 +15,7 @@ export default function Main() {
                     <Login/>
                 </Route>
                 <Route exact path={'/callback'} component={Callback}/>
+                <Route exact path={'/profile'} component={Profile}/>
             </Switch>
         </Provider>
     </Router>)
